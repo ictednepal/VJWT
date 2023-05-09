@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0
+}
+#headerWrap{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.logoWrap{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+.bannerWrap{
+    width: 1000px;
+    height: 200px;
+    background-color: blue;
+    float: right;
+}
+#menuWrap{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: brown;
+}
+#introWrap{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.introBox{
+    width: 600px;
+    height: 500px;
+    float: left;
+}
+#programWrap{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.programBox{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
