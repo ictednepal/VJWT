@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #headerWrap{
     width: 1200px;
@@ -31,9 +32,15 @@
     margin: 0 auto;
 }
 .introBox{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
     float: left;
+    padding: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+.introBox h2{
+    text-transform: capitalize;
 }
 #programWrap{
     width: 1200px;
