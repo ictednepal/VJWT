@@ -29,7 +29,7 @@
 #introWrap{
     width: 1200px;
     height: 500px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .introBox{
     width: 500px;
@@ -57,6 +57,7 @@
     height: 400px;
     margin: 0 auto;
     background-color: #2e2f2f;
+    margin-top: 50px;
 }
 #footerCredentials{
     width: 1200px;
