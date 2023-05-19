@@ -1,7 +1,8 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
 }
 #headerWrap{
     width: 1200px;
@@ -14,17 +15,38 @@
     background-color: red;
     float: left;
 }
+.logoWrap img{
+    width: 200px;
+    height: 200px;
+}
 .bannerWrap{
     width: 1000px;
     height: 200px;
-    background-color: blue;
     float: right;
+    background-color: cadetblue;
 }
 #menuWrap{
     width: 1200px;
     height: 80px;
     margin: 0 auto;
     background-color: brown;
+}
+#menuWrap ul{
+    padding-top: 25px;
+}
+#menuWrap ul li{
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+}
+#menuWrap ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#menuWrap ul li a:hover{
+    background-color: aqua;
 }
 #introWrap{
     width: 1200px;
