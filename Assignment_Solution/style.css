@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
+    /* background-color: black; */
 }
 #headerWrap{
     width: 1200px;
@@ -63,6 +63,12 @@ body{
 }
 .introBox h2{
     text-transform: capitalize;
+}
+.introBox img{
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
 }
 #programWrap{
     width: 1200px;
