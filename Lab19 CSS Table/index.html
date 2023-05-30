@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        thead {
+            background-color: red;
+        }
+
+        tbody {
+            background-color: gray;
+        }
+
+        tfoot {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tfoot>
+            <tr>
+                <th>S.N.</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Ram Thapa</td>
+                <td>Kathmandu</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Sita Rai</td>
+                <td>Pokhara</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Laxman Nepal</td>
+                <td>Dhangadhi</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+
+    </table>
+</body>
+
+</html>
