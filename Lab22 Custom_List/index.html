@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with custom list</title>
+    <style>
+        ol{
+            list-style: none;
+            counter-reset: num;
+        }
+        ol li{
+            counter-increment: num;
+            margin-bottom: 5px;
+        }
+        ol li::before{
+            content: "0" counter(num);
+            margin-right: 5px;
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-shadow: 1px 1px 1px 0px rgba(40, 45, 0, 0.27);
+            border-radius: 50%;
+            font-size: 12px;
+            padding: 2px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Nepal</li>
+        <li>India</li>
+        <li>China</li>
+        <li>Bhutan</li>
+        <li>Japan</li>
+        <li>Russia</li>
+        <li>Korea</li>
+    </ol>
+</body>
+</html>
