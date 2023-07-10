@@ -1,27 +1,54 @@
 <?php
-    $students = array(
-        "Ram" => array(
+    // $students = array(
+    //     "Ram" => array(
+    //         "address" => "Kathmandu",
+    //         "email" => "cuteram@gmail.com",
+    //         "marks" => 89
+    //     ),
+    //     "Sita" => array(
+    //         "address" => "Bhaktapur",
+    //         "email" => "handsomeram@gmail.com",
+    //         "marks" => 47
+    //     ),
+    //     "Laxman" => array(
+    //         "address" => "Pokhara",
+    //         "email" => "lax@gmail.com",
+    //         "marks" => 67
+    //     ),
+    //     "Hari" => array(
+    //         "address" => "Chitwan",
+    //         "email" => "yourhari@gmail.com",
+    //         "marks" => 45
+    //     )
+    // );
+
+    // echo "Email id of ram = ".$students["Ram"]["email"];
+
+    $student = array(
+        array(
             "address" => "Kathmandu",
-            "email" => "cuteram@gmail.com",
-            "marks" => 89
+            "marks" => 58,
+            "email" => "ram@gmail.com"
         ),
-        "Sita" => array(
+        array(
             "address" => "Bhaktapur",
-            "email" => "handsomeram@gmail.com",
-            "marks" => 47
+            "marks" => 78,
+            "email" => "sita@gmail.com"
         ),
-        "Laxman" => array(
-            "address" => "Pokhara",
-            "email" => "lax@gmail.com",
-            "marks" => 67
+        array(
+            "address" => "Lalitpur",
+            "marks" => 99,
+            "email" => "hari@gmail.com"
         ),
-        "Hari" => array(
-            "address" => "Chitwan",
-            "email" => "yourhari@gmail.com",
-            "marks" => 45
-        )
     );
 
-    echo "Email id of ram = ".$students["Ram"]["email"];
+    // echo $student[2]["address"];
+    $keys = array_keys($student);
+    for ($i=0; $i < count($student) ; $i++) { 
+        echo "<br/>";
+        foreach ($student[$keys[$i]] as $key => $value) {
+            echo $value . "<br/>";
+        }
+    }
 
 ?>
