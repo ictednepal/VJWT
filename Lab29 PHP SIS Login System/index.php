@@ -26,6 +26,11 @@
                     <button><a href="register.php">Register</a></button>
                 </td>
             </tr>
+            <?php
+                if(@$_GET['Invalid']==true){
+                    echo $_GET['Invalid'];
+                }
+            ?>
         </table>
     </form>
 </body>

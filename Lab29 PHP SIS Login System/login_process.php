@@ -12,6 +12,9 @@
             if($u=="ram" && $p=="pass@123"){
                 header("location:welcome.php");
             }
+            else{
+                header("location:index.php?Invalid=Invalid credentials");
+            }
         }
     }
 ?>
