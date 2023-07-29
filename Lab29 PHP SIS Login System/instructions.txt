@@ -1,0 +1,12 @@
+1.create database `db_sls`;
+
+2. create table `users`
+(
+    `uid` int(11) primary key auto_increment,
+    `uname` varchar(55) not null,
+    `upass` varchar(55) not null
+);
+
+3. insert into `users`(`uname`,`upass`) values ("ram","ram@123");
+
+4. select * from `users`;

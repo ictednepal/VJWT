@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SLS - LOGIN</title>
+    <title>Please Register your details</title>
 </head>
 <body>
-    <h1>Student Login System - Please Login</h1>
+    <h1>Student User Registration</h1>
     <table>
-        <form action="login_process.php" method="POST">
+        <form action="register_process.php" method="POST">
             <tr>
                 <td><label for="username">Username :</label></td>
                 <td><input type="text" name="user" id="username" placeholder="Enter username"></td>
@@ -21,15 +21,9 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <button type="submit" name="submit">Login</button>
-                    <button><a type="button" href="register.php">Register</a></button>
+                    <button type="submit" name="submit">Submit</button>
                 </td>
             </tr>
-            <?php
-                if(@$_GET['Invalid']==true){
-                    echo $_GET['Invalid'];
-                }
-            ?>
         </form>
     </table>
 </body>
