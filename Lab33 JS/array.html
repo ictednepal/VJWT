@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="hello"></h2>
+    <script>
+        // const names = ["Ram", "Sita", "Hari", "Gita", "Nita", "Mira", "Laxman"];
+        // document.getElementById("hello").innerHTML = names;
+
+        const student = {
+            name: "Ram",
+            address: "Sanothimi",
+            dob: new Date('1990-05-08')
+        }
+        document.getElementById("hello").innerHTML = student['name'] + " lives in " + student['address'] + " and his date of birth is " + student['dob'];
+    </script>
+</body>
+
+</html>
