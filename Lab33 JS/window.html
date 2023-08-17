@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hello"></p>
+    <script>
+        let password = "pass@123";
+        let ciphertext = window.btoa(password);
+        let normalText = window.atob(ciphertext);
+        document.getElementById("hello").innerHTML = normalText;
+    </script>
+</body>
+</html>
