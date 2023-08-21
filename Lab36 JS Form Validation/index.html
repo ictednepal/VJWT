@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JS form validation</title>
+    <script>
+        function validate() {
+            if (document.myform.name.value == "") {
+                alert("Please, enter your name.");
+                document.myform.name.focus();
+                return (false);
+            }
+            if (document.myform.email.value == "") {
+                alert("Please, enter your email.");
+                document.myform.email.focus();
+                return (false);
+            }
+            if (document.myform.address.value == "") {
+                alert("Please, enter address.");
+                document.myform.address.focus();
+                return (false);
+            }
+            if (document.myform.country.value == "0") {
+                alert("Please, choose your country.");
+                document.myform.country.focus();
+                return (false);
+            }
+            return (true);
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <form action="" name="myform" onsubmit="return(validate());">
+            <tr>
+                <td><label for="name">Name :</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name...."></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter email id...."></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address :</label></td>
+                <td><input type="text" name="address" id="address" placeholder="Enter address...."></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country :</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="0">Choose your country</option>
+                        <option value="1">Nepal</option>
+                        <option value="2">India</option>
+                        <option value="3">China</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
